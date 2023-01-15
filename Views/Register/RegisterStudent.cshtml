@@ -1,0 +1,87 @@
+@{
+    ViewData["Title"] = "Sign Up As Student";
+}
+
+@model Project.ViewModels.RegisterViewModel
+
+<div style="height: calc(100vh - 56px);" class="w-100 bg-dblue-lighter overflow-hidden d-flex">
+    <div style="width: 70%" class="d-none d-xxl-block position-relative">
+        <img id="signInStudentImage" class="img-fluid position-absolute bottom-0" src="~/images/SignUpPage_Boy.png"/>
+    </div>
+
+    <div class="w-100 bg-white signUpInputs p-5 d-flex justify-content-center align-items-center">
+
+        <form asp-controller="Register" asp-action="RegisterStudent" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="row mb-3">
+                <div class="form-group row d-flex justify-content-around">
+                    <div class="col">
+                        <label asp-for="FirstName"></label>
+                        <input asp-for="FirstName" placeholder="John" class="form-control bg-secondary"/>
+                        <span asp-validation-for="FirstName" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="LastName"></label>
+                        <input asp-for="LastName" placeholder="Doe" class="form-control bg-secondary"/>
+                        <span asp-validation-for="LastName" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="form-group row d-flex justify-content-around">
+                    <div class="col">
+                        <label asp-for="Major"></label>
+                        <input asp-for="Major" placeholder="Choose your Major" class="form-control bg-secondary"/>
+                        <span asp-validation-for="Major" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="Gender"></label>
+                        <select name="gender" asp-for="Gender" class="form-control bg-secondary">
+                            <option value="null" selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <span asp-validation-for="Gender" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="form-group row d-flex justify-content-around">
+                    <div class="col">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" placeholder="Enter your Email here" class="form-control bg-secondary"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+
+                    <div class="col">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" placeholder="Enter your Password" class="form-control bg-secondary"/>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center align-content-center">
+                <button class="btn bg-mustard text-white" type="submit">
+                    <a>Create Account</a>
+                </button>
+            </div>
+
+            <div class="d-flex justify-content-center align-content-center p-2">
+                <p>
+                    Already have an account?
+                    @* <span> *@
+                    @*     <a asp-controller="Home" asp-action="StudentLogIn" class="text-decoration-none text-dblue-lighter fw-bold"> *@
+                    @*         Log in. *@
+                    @*     </a> *@
+                    @* </span> *@
+                </p>
+            </div>
+        </form>
+    </div>
+</div>

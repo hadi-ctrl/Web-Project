@@ -1,0 +1,90 @@
+*, *::before, *::after  {
+  box-sizing: border-box !important;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.bg-mustard {
+  background: #F6AE2D;
+}
+
+.text-mustard {
+  color: #F6AE2D;
+}
+
+.border-mustard {
+  border-color: #F6AE2D;
+}
+
+.bg-dblue-lighter {
+  background: #33658A;
+}
+
+.text-dblue-lighter {
+  color: #33658A;
+}
+
+.bg-dblue {
+  background: #2F4858;
+}
+
+.text-dblue {
+  color: #2F4858;
+}
+
+.nav-link, .nav-item  {
+  color: white !important;
+}
+
+#logo {
+  height: 80px;
+}
+
+/*SignUp Page*/
+
+
+
+@media screen and (min-width: 1400px) {
+  .signUpInputs{
+    border-radius: 75px 0px 0px 75px;
+  }
+}
+
+input::placeholder {
+  color: #838383 !important;
+}
+
+.bg-secondary {
+  background: #EFF0F2 !important;
+}
+
+  #signInStudentImage {
+    max-height: 1000px;
+  }
+  
+  
+  /*@media screen and (max-width: 1500px) {*/
+  /*    #signInStudentImage {*/
+  /*      height: 800px !important;*/
+  /*    }*/
+  /*  }*/
+  
+  /*@media screen and (max-width: 1300px) {*/
+  /*#signInStudentImage {*/
+  /*  height: 650px !important;*/
+  /*}*/
+  /*}*/
+

@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+    ViewData["Title"] = "Edit Profile";
+}
+
+@model Project.ViewModels.EditViewModel
+<div style="height: calc(100vh - 56px); padding: 60px;" class="bg-dblue-lighter d-flex flex-column justify-content-center align-items-center">
+    <form method="post" asp-controller="Home" asp-action="EditProfile">
+        <div style="border: 1px solid #F6AE2D; border-radius: 30px" class="d-flex justify-content-center align-items-center flex-column bg-mustard p-5">
+
+            <div>
+                <h1 class="text-dblue-lighter">@ViewData["Title"]</h1>
+            </div>
+            <div class="d-flex flex-column gap-3 p-5 input-group-lg w-100">
+                <input class="form-control bg-secondary" placeholder="@User.Identity?.Name" asp-for="Email"/>
+                <input class="form-control bg-secondary" asp-for="OldPassword" placeholder="Old Password">
+                <input class="form-control bg-secondary" asp-for="NewPassword" placeholder="New Password"/>
+            </div>
+            <div class="d-flex justify-content-center align-items-center flex-column w-100 gap-3">
+                <button class="btn bg-dblue-lighter text-white w-75">Save</button>
+                <a class="btn btn-danger text-white w-75" asp-controller="Home" asp-action="DeleteAccount">Delete Account</a>
+            </div>
+        </div>
+    </form>
+</div>

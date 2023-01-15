@@ -1,0 +1,446 @@
+:root {
+    --ocolor: #f6ae2d;
+    --bcolor: #33658a;
+}
+
+* {
+    font-family: sans-serif;
+}
+html {
+    font-size: calc(15px + 0.01vw);
+}
+.topribbon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* color 1 */
+
+    background: linear-gradient(0deg, #f6ae2d, #f6ae2d), rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(12.5px);
+}
+.tlogo{
+    margin: 0 5%;
+    color: white;
+}
+.navlinks {
+    margin-left: 6vw;
+}
+.navlinks a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1vw;
+}
+.signbuts .but {
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 0.3vw 1vw;
+    margin-left: 1vw;
+}
+.signbuts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2vw;
+}
+.inbut {
+    background-color: white;
+}
+.upbut {
+    background-color: #33658a;
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+}
+.d1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/bruce-mars-FWVMhUa_wbY-unsplash 1.png");
+}
+.d1c {
+    padding: 1vw 1vw 3vw 2vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/ellipse1.png");
+}
+.d1c .p1 {
+    color: #f6ae2d;
+    width: 70%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 89.84%;
+    margin: 26% 0 0 0;
+}
+.d1c .p2 {
+    width: 30%;
+    color: white;
+    font-style: normal;
+    font-size: .8rem;
+    line-height: 140%;
+}
+
+.d2 {
+    display: flex;
+    justify-content: center;
+    padding: 6vw 0 6vw 0;
+}
+.nb {
+    padding: 1vw;
+    border: 4px solid var(--ocolor);
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--ocolor);
+    font-size: 2rem;
+    font-weight: 600;
+}
+.c1,
+.c3,
+.c5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.c{
+    height: 100%;
+}
+.c img {
+    margin-top: 0.5rem;
+    width: 5vw;
+}
+.c2,
+.c4 {
+    margin-top: 1vw;
+}
+
+.cc p {
+    text-align: center;
+    width: 11vw;
+}
+.cc .p1 {
+    min-height: 5vw;
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.1vw;
+}
+.cc .p2 {
+    margin: 0;
+    font-size: 0.8rem;
+    color: var(--ocolor);
+}
+.arr {
+    color: var(--ocolor);
+    font-size: 2.5rem;
+}
+.d3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+    background-color: var(--bcolor);
+}
+.d3 p {
+    text-align: center;
+    color: white;
+    width: 50%;
+    font-size: 2rem;
+}
+.d3 .but {
+    color: white;
+    font-size: 0.8rem;
+    background-color: var(--ocolor);
+    border-radius: 5px;
+    padding: 0.5vw 1.5vw;
+}
+.d4 {
+    display: block;
+    overflow: hidden;
+    padding: 10vw 0 0 0;
+}
+
+.d4 .dd1 {
+    padding: 2vw;
+    text-align: center;
+    color: var(--bcolor);
+    font-weight: 600;
+    font-size: 2rem;
+}
+.d4 .dd2 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.d4 .ddd2 {
+    float: left;
+}
+.d4 .ddd2 img {
+    width: 100%;
+}
+.d4 .dd3 {
+    transform: translateX(-10%);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    text-align: center;
+    float: left;
+}
+.d4 .dd3 .r {
+    margin-bottom: 1vw;
+}
+.d5 {
+    margin-top: -2%;
+    z-index: -100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--ocolor);
+    color: white;
+    padding: 5vw 0 2vw 0;
+}
+.d5 .p1 {
+    width: 60%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1vw;
+}
+.d5 .p2 {
+    text-align: center;
+
+    width: 60%;
+    font-size: 0.8rem;
+}
+.d5 .but {
+    margin-top: 1vw;
+    padding: 0.4vw 1vw;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.r {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.r img {
+    margin-right: 1.4vw;
+    width: 3rem;
+}
+.r p {
+    color: var(--ocolor);
+    font-size: 1rem;
+}
+.r4 {
+    display: flex;
+    justify-content: center;
+}
+.but {
+    cursor: pointer;
+}
+.r4 .but {
+    background-color: var(--ocolor);
+    color: white;
+    padding: 0.4vw 1vw;
+    width: fit-content;
+    border-radius: 10px;
+}
+.footerC {
+    padding: 1vw 0 1vw 0;
+    background-color: var(--bcolor);
+    overflow: hidden;
+}
+.footer {
+    overflow: hidden;
+}
+.links {
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+.list {
+    text-align: center;
+    margin: 0 5vw;
+}
+.list a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.787);
+    font-size: 1rem;
+    display: block;
+    margin: 0.5vw;
+}
+.title {
+    color: var(--ocolor);
+}
+.navbut div{
+    background-color: white;
+    height: .5vw;
+    width: 10vw;
+    margin: 1.5vw;
+}
+.footer .logo {
+    color: white;
+    float: left;
+    padding: 1vw 8vw 0 8vw;
+}
+.copy {
+    width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 3vw 0 2vw 0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: calc(14px);
+    }
+    .nb{
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw;
+        font-size: 3rem;
+        font-weight: 100;
+    }
+    .cc{
+        text-align: center;
+    }
+    .cc .p1,.cc .p2{
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+    }
+    .d2{
+        display: block;
+    }
+    .c{
+        height: auto;
+    }
+    .d4{
+        display: none;
+    }
+    .d5{
+        margin-top: 0;
+    }
+    .r img{
+        width: 2rem;
+    }
+    .r p{
+        font-size: .8rem;
+    }
+    .ddd2 img{
+        display: none;
+    }
+    .c2,.c4{
+        display: none;
+    }
+    .d1{
+        background-image: url("images/pexels-armin-rimoldi-5553061 1.png");
+    }
+    .d1c{
+        background-image: url("images/Rectangle 66.png");
+
+    }
+    .d1c .p1,.d1c .p2{
+        text-align: center;
+        width: 100%;
+    }
+    .d1c .p1{
+        font-size: 2rem;
+    }
+    .d1c .p2{
+        margin-bottom: 15vw;
+        font-size: .8rem;
+    }
+    .d3 p{
+        width: 95%;
+    }
+    .d3 .but{
+        padding: 5% 10%;
+    }
+    .d5{
+        background-image: url("images/Image.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .d5 .p1{
+        margin-top: 70%;
+        background-color: var(--bcolor);
+        width: 95%;
+        font-size: 3rem;
+    }
+    .d5 .p2{
+        display: none;
+    }
+    .d5 .but{
+        background-color: var(--ocolor);
+        padding: 4% 8%;
+        border: none;
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
+    .logo{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    .links{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .list a{
+        margin: 2vw;
+    }
+    .navlinks{
+        display: none;
+    }
+    .topribbon img{
+        display: none;
+    }
+    .topribbon{
+        padding: 5%;
+        box-sizing: border-box;
+    }
+    .signbuts{
+        display: none;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .tlogo{
+        display: none;
+    }
+    .navbut{
+        display: none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

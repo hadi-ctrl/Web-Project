@@ -1,0 +1,28 @@
+﻿html{
+    font-size: 15px;
+}
+.card1{
+    padding: 2vw 1vw 1vw 1.5vw;
+}
+.butsC{
+    margin-top: -10px;
+}
+.butsC button{
+    width: 125px;
+    padding: 5px 10px;
+}
+.sal{
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+}
+.salC{
+    font-size: 1.2rem;
+    transform: translateY(-20px);
+}
+.card-title{
+    margin-bottom: 0px;
+}
+.majorP{
+    margin-bottom: 5px;
+}

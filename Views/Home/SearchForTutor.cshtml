@@ -1,0 +1,53 @@
+@model List<ApplicationUser>
+
+@{
+    ViewBag.Title = "Search For Tutor";
+}
+
+
+
+<div style="background-color: #33658A;">
+    <div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <div style="width: 622px; background-color: white; border-radius: 20px;">
+                <input id="search" type="text" class="form-control rounded-pill" placeholder="Search for Tutor"/>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;  margin-top: 50px;">
+            <div id="display" style="width: 100%; background-color: white; border-radius: 30px; height: 100vh;">
+
+                @foreach (var tutor in Model)
+                {
+                    <div id="main" class="card card1 p" style="margin: 20px; border-radius:30px">
+                        <div class="d-flex justify-content-between">
+                            <div>
+                                <img src=@tutor.ImageURL alt="Profile Picture" style="width:125px;height: 125px;border-radius: 25px;">
+                            </div>
+                            <div style="width: 65%;padding-left: 2vw;">
+                                <h5 class="card-title">@tutor.FirstName @tutor.LastName</h5>
+                                <p id="major" class="card-text majorP">@tutor.Major</p>
+                                <p class="card-text">@tutor.About</p>
+                            </div>
+                            <div style="text-align: right;width:25%;padding-right: 1.5vw;" class="salC">
+                                <i class="sal">@tutor.Rate</i> per hour
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end pe-3 ms-3 butsC">
+                            <button class="btn btn-primary me-3" style="background-color: #F6AE2D;border-color:#F6AE2D;  border-radius: 25px;">Book a Session</button>
+                            <button class="btn btn-secondary" style="background-color: #33658A; border-radius: 25px;">Message</button>
+                        </div>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById("search").addEventListener("input", () => {
+document.getElementById("major").parentElement.parentElement.parentElement.style.display = "none";
+    
+});
+</script>

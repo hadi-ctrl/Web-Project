@@ -1,0 +1,18 @@
+@{
+    ViewData["Title"] = "Register";
+}
+
+<section style="height: calc(100vh - 56px);" class="d-flex justify-content-center align-items-center flex-column">
+
+    <div class="d-flex flex-column bg-dblue-lighter" style="padding: 150px; border-radius: 60px">
+        <h1 class="m-3">SignUp as:</h1>
+
+        <a asp-controller="Register" asp-action="RegisterStudent" class="btn rounded-pill border m-2 text-white" style="border-color: #F6AE2D !important;">
+            Student
+        </a>
+
+        <a asp-controller="Register" asp-action="RegisterTutor" class="btn rounded-pill border m-2  text-white" style="border-color: #F6AE2D !important;">
+            Tutor
+        </a>
+    </div>
+</section>
