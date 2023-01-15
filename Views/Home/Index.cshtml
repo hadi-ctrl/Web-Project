@@ -47,9 +47,9 @@
         <p>
             Find the right person to help you reach your goals–no matter where you live, or what you want to learn.
         </p>
-        <div class="but">
+        <a class="but text-decoration-none text-white" asp-controller="Register" asp-action="RegisterStudent">
             GET STARTED
-        </div>
+        </a>
     </div>
     <div class="d4 d">
         <div class="dd1">
@@ -84,9 +84,10 @@
         <p class="p1">Start tutoring with Tutopia.</p>
         <p class="p2">We're always looking for talented tutors. Set your own rate, get paid and make difference. Yoa can
             also benefit from our certification.</p>
-        <div class="but">
+        <a class="but text-decoration-none text-white" asp-controller="Register" asp-action="RegisterTutor">
             APPLY TODAY
-        </div>
+        </a>
+            
     </div>
     <div class="footerC">
         <div class="footer">
@@ -98,25 +99,25 @@
                     <p class="title">
                         LEARN WITH US
                     </p>
-                    <a href="">Find a Tutor</a>
-                    <a href="">Request a Tutor</a>
-                    <a href="">Online Tutoring</a>
+                    <a asp-controller="Home" asp-action="SearchForTutor">Find a Tutor</a>
+                    <a href="#">Request a Tutor</a>
+                    <a href="#">Online Tutoring</a>
                 </div>
                 <div class="list">
                     <p class="title">
                         GET TO KNOW US
                     </p>
-                    <a href="">About Us</a>
-                    <a href="">Contact Us</a>
-                    <a href="">FAQ</a>
-                    <a href="">Reviews</a>
+                    <a asp-controller="Home" asp-action="About">About Us</a>
+                    <a asp-controller="Home" asp-action="Contact">Contact Us</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Reviews</a>
                 </div>
                 <div class="list">
                     <p class="title">
                         WORK WITH US
                     </p>
                     <a href="">Careers at Tutopia</a>
-                    <a href="">Apply to Tutor</a>
+                    <a asp-controller="Register" asp-action="RegisterTutor">Apply to Tutor</a>
                     <a href="">Tutor job board</a>
                 </div>
             </div>

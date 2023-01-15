@@ -101,6 +101,11 @@ public class HomeController : Controller
             return BadRequest(changePasswordResult.Errors);
         }
 
+        if (model.ImageURL != null)
+        {
+            user.ImageURL = model.ImageURL;
+        }
+
         await _userManager.UpdateAsync(user);
 
         return RedirectToAction("Index", "Home");

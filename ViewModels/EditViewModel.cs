@@ -12,4 +12,6 @@ public class EditViewModel
     
     [DataType(DataType.Password)]
     public string? NewPassword { get; set; }
+
+    public string ImageURL { get; set; }
 }
